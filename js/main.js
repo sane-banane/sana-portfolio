@@ -21,7 +21,10 @@ $(function () {
     $("#nav a").on("click", function () {
         $("header").toggleClass("open");
     });
-    $("#mask").on("click", function () {
+    $('#mask').on("click", function () {
+        $("header").removeClass('open');
+    });
+    $('a[href="#contact"]').on("click", function () {
         $("header").removeClass('open');
     });
 
@@ -34,7 +37,7 @@ $(function () {
             let scroll = $(window).scrollTop();
             let target = $(this).offset().top;
             let windowHeight = $(window).height();
-            if (scroll > target - windowHeight + 200) {
+            if (scroll > target - windowHeight + $(".fadein").height()) {
                 $(this).css("opacity", "1");
                 $(this).css("transform", "translateY(0)");
             }
