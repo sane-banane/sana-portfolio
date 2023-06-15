@@ -972,7 +972,7 @@ margin-bottom:50px;
     margin-bottom:80px;
 }
 .map{
-    filter:sepia(30%);
+    filter:sepia(40%);
 }
 .gallery-content p{
 width:45%;
@@ -1011,9 +1011,7 @@ width:45%;
     top:0;
     right:0;
 }
-.instagram{
-    margin:50px 0;
-}
+
 
 
 
